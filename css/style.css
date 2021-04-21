@@ -1,0 +1,288 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+html,body{
+	height: 100%;
+}
+
+
+header{
+	background:rgb(200,200,200);
+	padding: 10px 2%;
+
+}
+
+.clear{
+	clear: both;
+
+}
+
+.container{
+	width: 100%;
+	max-width: 1024px;
+	margin: 0 auto;
+
+}
+
+
+
+.logo1{
+	float: left;
+	width: 160px;
+	height: 75px;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url('../imagens/logo1.png');
+
+}
+
+.logo2{
+	float: right;	
+	width: 160px;
+	height: 75px;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url('../imagens/logo2.png');
+
+
+}
+
+
+
+.container2{
+	width: 100%;
+	max-width: 1024px;
+	margin: 0 auto;
+	
+}
+
+
+.bgform{
+	height: 560px;
+	background-image: url('../imagens/bgform.jpg');
+	position: relative;
+	background-size: cover;
+	background-position: center;
+
+
+}
+
+.form{
+	width: 400px;
+	height: 600px;
+	box-shadow: 2px 2px 5px 0 rgba(117,117,117,1);
+	box-sizing: border-box;
+	right: 30px;
+	position: absolute;
+	z-index: 2;
+	background-color: white;
+	align-items: center;
+	top: -20px;
+
+}
+
+.form form{
+	margin-top: 20px;
+	padding: 15px;
+
+}
+
+.form-wraper{
+ color: #525252;
+}
+
+
+h2{
+	background-color: rgb(200,200,200);
+	padding: 25px 15px;
+	font-size: 18px;
+	font-weight: normal;
+}
+
+
+
+input{
+	width: 100%;
+	height: 40px;
+	align-items: center;
+	display: inline-block;
+	padding: 10px;
+
+}
+
+.form-wraper:not(first-child){
+	margin-top: 40px;
+}
+
+input[type="submit" i]{
+	color: white;
+	background-color: #033c50;
+	width: 100%;
+	height: 50px;
+	align-items: center;
+	font-size: 25px;
+	cursor: pointer;
+
+}
+
+form p{
+	padding-top: 20px;
+}
+
+.container3{
+	width: 100%;
+	max-width: 1024px;
+	margin: 0 auto;
+	height: 200px;
+	background-color: #29526d;
+	position: relative;
+}
+
+.arrow{
+	width: 64px;
+	height: 64px;
+	background-image: url('../imagens/arrow.png');
+	position: absolute;
+	background-repeat: no-repeat;
+	left: 50%;
+	top: -32px;
+}
+
+.container3 h3{
+	text-align: center;
+	color: white;
+	font-size: 25px;
+	padding-top: 70px;
+}
+
+.container3 p{
+	text-align: center;
+	color: white;
+	font-size: 18px;
+	padding-top: 10px;
+}
+
+.container4, .container5, .container6, .container7{
+	width: 100%;
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+.mosaico1{
+	display: flex;
+}
+
+.item02-mosaico1{
+	width: 40%;
+	background-color: #4683ab;
+	padding: 90px 40px;
+	color: white;
+
+}
+
+.item01-mosaico1{
+	width: 60%;
+	background-position: center;
+	background-size: cover;
+	background-image:url('../imagens/mosaico1.jpg');
+}
+
+.item01-mosaico2{
+	width: 60%;
+	height: 330px;
+	background-position: center;
+	background-size: cover;
+	background-image:url('../imagens/mosaico2.jpg');
+}
+
+.item01-mosaico3{
+	width: 60%;
+	height: 330px;
+	background-position: center;
+	background-size: cover;
+	background-image:url('../imagens/mosaico3.jpg');
+}
+
+.item01-mosaico4{
+	width: 60%;
+	height: 330px;
+	background-position: center;
+	background-size: cover;
+	background-image:url('../imagens/mosaico4.jpg');
+}
+
+.footer{
+	width: 100%;
+	max-width: 1024px;
+	margin: 0 auto;
+	background:rgb(220,220,220);
+	padding: 20x 0;
+	text-align: center;
+}
+
+.footer-img{
+	width: 130px;
+	height: 75px;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url('../imagens/logo1.png');
+	margin: 0 auto;
+	top: 10px;
+}
+
+
+@media screen and (max-width: 1024px){
+
+	.bgform{
+		height: auto;
+		padding: 80px 0;
+		text-align: center;
+	}
+
+	.form{
+		text-align: left;
+		height: auto;
+		width: 96%;
+		max-width: 400px;
+		position: static;
+		display: inline-block;
+	}
+}
+
+@media screen and (max-width: 768px){
+
+	.mosaico1{
+		display: block;
+	}
+
+	.item01-mosaico1, .item01-mosaico2, .item01-mosaico3, .item01-mosaico4{
+		padding-top:80%;
+		width: 100%;
+	}
+
+	.item02-mosaico1{
+		text-align: justify;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 510px){
+
+	header{
+		text-align: center;
+	}
+
+	[class^="container"]{
+		margin-top:10px;
+		display: inline-block;
+		float: none;
+	}
+
+}
